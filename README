@@ -1,0 +1,6 @@
+Usage & dependancy notes;
+* PHP 5
+* PHP server (command line bundled w/ php5 is good enough so far)
+
+This build is confirmed working on:
+* Ubuntu, Chromium, PHP CLI
