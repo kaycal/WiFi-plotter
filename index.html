@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Sample splash page</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="src/leaflet.css" />
+    <link rel="stylesheet" href="src/style.css" />
+	<script src="src/leaflet.js"></script>
+    <script src="src/jquery-1.11.3.min.js"></script>
+    <script src="src/localMap.js"></script>
+    <script src="src/main.js"></script>
+
+</head>
+<body>
+    <div id="top" class="container">
+
+	    <div id="map" style="width: 45%; height: 100%; float: left">
+        </div>
+
+        <div id="controls" style="width: 52%; height: 100%; border-radius: 1px; border: 1px solid #8AC007; float: right">
+
+            <h3>Filter controls</h3>
+                <div id="filterList"></div>
+            <h3>Routine</h3>
+            <div>
+                <form action="" method="POST" enctype="multipart/form-data" id="uploadForm">
+                    CSV Update:
+                    <input type="file" name="csvUpdate" id="csvUpdate">
+                    <input type="submit" value="Upload Readings" name="submit" id="submit">
+                </form>
+            </div>
+
+            <h3>Diagnostic</h3>
+            <div>
+                <p><a id="ping" href="#">Ping database & log response to console.</a></p>
+                <p><a id="query" href="#">Direct query</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bot" class="container">
+        <div class="container" id="console">
+        </div>
+    </div>
+
+    <script>initmap();</script>
+
+</body>
+</html>
+
